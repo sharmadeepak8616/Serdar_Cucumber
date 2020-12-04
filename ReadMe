@@ -1,0 +1,5 @@
+Explain your QA framework:
+The current QA framework in a Maven project, designed using Page Object Model.
+We write testcases in Cucumber format using Gherkins, and write stepDefinitions for them using Java programming language.
+We have integrated allure-report in the framework to generate test report after test-execution.
+
