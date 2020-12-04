@@ -17,7 +17,7 @@ public class Helper {
         try {
             Thread.sleep(seconds*1000); // 2x1000 = 2000
         } catch (InterruptedException e) {
-
+            // code
         }
     }
 
