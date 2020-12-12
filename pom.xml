@@ -18,6 +18,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
+                    <includes>
+                        <excludes>TestRunner.java</excludes>
+                    </includes>
                     <source>8</source>
                     <target>8</target>
                 </configuration>
@@ -61,6 +64,13 @@
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>1.2.5</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.12.0</version>
             <scope>test</scope>
         </dependency>
 

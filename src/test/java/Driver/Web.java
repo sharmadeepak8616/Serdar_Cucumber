@@ -17,7 +17,7 @@ public class Web extends ReportFactory {
 
     private static WebDriver driver = null;
 
-    @Before
+
     public void initDriver() {
         String clientName = "chrome";
         switch (clientName.toLowerCase()) {
@@ -35,7 +35,9 @@ public class Web extends ReportFactory {
             default:
                 new Exception("Invalid client name: " + clientName);
         }
-        driver.get("https://clubs3qa1.scholastic.com/");
+        // driver.get("https://clubs3qa1.scholastic.com/");
+        driver.get("https://www.hotels.com/");
+        // driver.get("https://candidatex:qa-is-cool@qa-task.backbasecloud.com");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
